@@ -1,0 +1,436 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;700;900&family=Architects+Daughter&family=Changa:wght@300;400;700&family=Lobster&family=Merriweather:wght@400;700;900&family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@400;600;700;900&display=swap");
+/* All Google Font-Family
+font-family: 'Alegreya', serif;  -->400,600,700,900
+font-family: 'Architects Daughter', cursive;  -->300,400,700
+font-family: 'Changa', sans-serif;  -->300,400,700
+font-family: 'Lobster', cursive;  -->400,600,700,900
+font-family: 'Merriweather', serif;  -->400,700,900
+font-family: 'Playfair Display', serif;  -->400,600,700,900
+font-family: 'Poppins', sans-serif;   -->400,600,700,900 */
+
+/* Main CSS */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #550f49;
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+.logo {
+  border-radius: 30px;
+  margin: 10px 0 0 60px;
+  width: 80px;
+  height: 70px;
+  box-shadow: rgb(94, 104, 114) 0px 10px 30px -5px;
+  transition: width 0.3s, height 0.3s, transform 1s;
+}
+.logo:hover {
+  width: 85px;
+  height: 75px;
+  transform: rotate(-10deg);
+}
+nav {
+  position: absolute;
+  top: 30px;
+  left: 540px;
+}
+.nav-links {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Alegreya", serif;
+  font-weight: 600;
+  margin: 25px;
+  color: rgb(194, 197, 197);
+  transition: font-size 0.4s, font-weight 0.4s;
+  transition-timing-function: ease-in;
+}
+.nav-links:hover {
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  text-shadow: 0px 0px 20px #88e3eb;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+.hero {
+  position: relative;
+  height: 700px;
+}
+.heading {
+  font-size: 50px;
+  padding-left: 200px;
+  padding-top: 90px;
+  color: #c1e6e1;
+  text-shadow: 5px 1px 10px #000000;
+}
+.hello {
+  font-size: 35px;
+  padding-left: 400px;
+  padding-top: 15px;
+  text-shadow: 5px 1px 10px #000000;
+}
+img[alt="Hello-Wave"] {
+  width: 70px;
+  height: 50px;
+}
+.intro {
+  font-size: 23px;
+  font-weight: 600;
+  word-spacing: 7px;
+  line-height: 50px;
+  padding-left: 300px;
+  padding-top: 5px;
+  width: 680px;
+  height: 260px;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 1px 10px #000000;
+}
+img[alt="hero-image"] {
+  position: absolute;
+  top: 10px;
+  left: 850px;
+  width: 220px;
+  border-radius: 5px 50px;
+  filter: none;
+  background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+img[alt="hero-image"]:hover {
+  filter: grayscale();
+}
+
+/* Service Section  */
+#service {
+  height: 500px;
+}
+.service-heading {
+  font-size: 40px;
+  text-align: center;
+}
+.service-section {
+  display: flex;
+  padding-top: 50px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.service-web,
+.service-graphics,
+.service-video {
+  background-color: rgb(211, 199, 176);
+  color: #000000;
+  padding: 10px;
+  margin: 8px;
+  border: 3px solid rgb(233, 111, 111);
+  -webkit-box-shadow: 3px 7px 50px -10px #ffffff;
+  box-shadow: 3px 7px 50px -10px #080808;
+}
+.service-web {
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+.service-video {
+  border-top-left-radius: 90px;
+  border-bottom-left-radius: 90px;
+}
+.service-graphics {
+  border-radius: 70px;
+}
+.service-item-logo {
+  font-size: 50px;
+  margin-left: 120px;
+  color: #0f5055;
+}
+.service-title {
+  text-align: center;
+}
+.service-graphics-body,
+.service-video-body {
+  text-align: center;
+}
+.service-tool {
+  list-style: none;
+}
+/* Service Section End */
+
+/* Pricing table Start */
+.price-title {
+  font-size: 40px;
+  text-align: center;
+}
+.price-tables {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.columns {
+  width: 33.3%;
+  padding: 7px;
+}
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(253, 252, 252, 0.2);
+}
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+/* Grey list item */
+.price .grey {
+  background-color: rgb(192, 179, 179);
+  font-size: 20px;
+}
+.grey-sign {
+  background-color: rgb(192, 179, 179);
+  font-size: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/* The "Sign Up" button */
+.button {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Invoice Section Start */
+.invoice-section {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid rgb(130, 132, 134);
+  background-color: #f8f9fa;
+  position: relative;
+  font-family: "Merriweather", serif;
+}
+.invoice-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.invoice-head {
+  display: flex;
+  padding: 30px;
+  background-color: #dc3545;
+}
+.invoice-header {
+  font-size: 30px;
+}
+.invoice-address-1 {
+  text-align: right;
+}
+.invoice-address-2 {
+  text-align: right;
+  font-style: italic;
+}
+.address {
+  list-style: none;
+  padding-left: 150px;
+}
+.invoice-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  padding-top: 25px;
+}
+.invo-no,
+.invo-date {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 90px;
+}
+.invo-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 120px;
+}
+.invo-bill,
+.invo-bill-details {
+  display: flex;
+  justify-content: space-around;
+  color: #3b3838;
+  font-size: 20px;
+  padding-top: 30px;
+}
+.invo-bill-details > * {
+  flex: 1;
+}
+.details-1,
+.details-2,
+.details-3 {
+  text-align: center;
+}
+.details-2,
+.details-3 {
+  padding-right: 20px;
+}
+/* Table Data */
+.invoice-table {
+  margin-top: 50px;
+  border: 2px solid black;
+  height: 250px;
+  table-layout: fixed;
+  width: 100%;
+}
+.invo-table-thead {
+  color: #eee;
+  background-color: rgb(68, 65, 65);
+}
+.invo-table-tbody {
+  text-align: center;
+  color: #eee;
+  background-color: #550f49;
+}
+.invo-table-tbody tr:nth-child(even) {
+  background-color: #32a2a8;
+}
+.invo-table-end {
+  text-align: right;
+  padding-right: 50px;
+}
+.invo-table-tbody tr:hover {
+  background-color: #73a832;
+}
+/* Table Data End */
+.text-id-info {
+  display: flex;
+  color: #3b3838;
+  padding-top: 50px;
+}
+.text-id {
+  flex: 2;
+  text-align: center;
+  text-decoration: underline;
+}
+.flex-id-num {
+  flex: 1;
+  text-align: left;
+}
+.text-note {
+  flex: 3;
+  text-align: center;
+  border: 1px solid black;
+  margin-left: 150px;
+}
+.text-note:hover {
+  background-color: #550f49;
+  color: #eee;
+}
+.text-note-sub {
+  color: rgb(179, 176, 172);
+}
+.thanks {
+  padding-top: 150px;
+}
+.thank-you {
+  font-family: "Lobster", cursive;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+.invo-conditin {
+  font-size: small;
+  color: #000000;
+  text-align: center;
+}
+.invo-footer {
+  margin-top: 30px;
+  height: 70px;
+  background-color: #dc3545;
+}
+.invo-footer-title {
+  text-align: center;
+  padding-top: 25px;
+}
+/* Invoice Section End */
+
+/* Registration Section Start */
+.registration-section {
+  margin: 60px auto;
+  width: 720px;
+  height: 760px;
+  border: 10px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 40px 33px rgba(0, 0, 0, 0.4) inset;
+  -webkit-box-shadow: 0px 0px 40px 33px rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow: 0px 0px 40px 33px rgba(0, 0, 0, 0.4) inset;
+}
+.registration {
+  margin: 50px;
+  padding: 15px;
+  width: 600px;
+  height: 600px;
+  background-color: tomato;
+  border-radius: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 6px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type="date"] {
+  width: 35%;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+  border: 3px solid #555;
+}
+.submit,
+.reset {
+  margin-left: 50px;
+  padding: 20px;
+  text-decoration: none;
+  color: #eee;
+  background-color: black;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px -50px 36px -28px inset;
+}
+.submit1 {
+  text-decoration: none;
+  color: #eee;
+}
+/* Registration Section End */
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-weight: 900;
+  padding: 10px;
+}
